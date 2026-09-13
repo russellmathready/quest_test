@@ -137,12 +137,12 @@ function genMixedBoss(tier) {
 
 /* ---------- zones ---------- */
 const ZONES = [
-  { id: 'woods', name: 'Whispering Woods', theme: 'Addition & Subtraction', emoji: '🌲', monsterEmoji: '👺', monsterName: 'Grumble the Goblin', color: '#5fbf6b', category: 'addsub', questionCount: 8, hearts: 3 },
-  { id: 'caves', name: 'Crystal Caves', theme: 'Multiplication', monsterEmoji: '🗿', monsterName: 'Glimmer Golem', emoji: '💎', color: '#7a6ff0', category: 'mult', questionCount: 8, hearts: 3 },
-  { id: 'swamp', name: 'Sunken Swamp', theme: 'Division', emoji: '🌿', monsterEmoji: '🐸', monsterName: 'Sloggy the Swamp Beast', color: '#3fae8f', category: 'div', questionCount: 8, hearts: 3 },
-  { id: 'mountains', name: 'Frostpeak Mountains', theme: 'Fractions', emoji: '🏔️', monsterEmoji: '🐺', monsterName: 'Frostfang', color: '#66c7e0', category: 'frac', questionCount: 8, hearts: 3 },
-  { id: 'desert', name: 'Ember Desert', theme: 'Percentages & Decimals', emoji: '🏜️', monsterEmoji: '🦂', monsterName: 'Sandshade Scorpion', color: '#e0a24f', category: 'percent', questionCount: 8, hearts: 3 },
-  { id: 'spire', name: "Dragon's Spire", theme: 'Mixed Mastery — Final Battle', emoji: '🐉', monsterEmoji: '🐉', monsterName: 'Numeros the Ancient Dragon', color: '#e05263', category: 'boss', questionCount: 10, hearts: 4 }
+  { id: 'woods', name: 'Whispering Woods', theme: 'Addition & Subtraction', emoji: '🌲', monsterEmoji: '👺', monsterName: 'Grumble the Goblin', color: '#7bc98a', category: 'addsub', questionCount: 8, hearts: 3 },
+  { id: 'caves', name: 'Crystal Caves', theme: 'Multiplication', monsterEmoji: '🗿', monsterName: 'Glimmer Golem', emoji: '💎', color: '#948bef', category: 'mult', questionCount: 8, hearts: 3 },
+  { id: 'swamp', name: 'Sunken Swamp', theme: 'Division', emoji: '🌿', monsterEmoji: '🐸', monsterName: 'Sloggy the Swamp Beast', color: '#5fc0a3', category: 'div', questionCount: 8, hearts: 3 },
+  { id: 'mountains', name: 'Frostpeak Mountains', theme: 'Fractions', emoji: '🏔️', monsterEmoji: '🐺', monsterName: 'Frostfang', color: '#85d3e6', category: 'frac', questionCount: 8, hearts: 3 },
+  { id: 'desert', name: 'Ember Desert', theme: 'Percentages & Decimals', emoji: '🏜️', monsterEmoji: '🦂', monsterName: 'Sandshade Scorpion', color: '#e8b877', category: 'percent', questionCount: 8, hearts: 3 },
+  { id: 'spire', name: "Dragon's Spire", theme: 'Mixed Mastery — Final Battle', emoji: '🐉', monsterEmoji: '🐉', monsterName: 'Numeros the Ancient Dragon', color: '#e2828f', category: 'boss', questionCount: 10, hearts: 4 }
 ];
 
 function tierForIndex(index, total) {

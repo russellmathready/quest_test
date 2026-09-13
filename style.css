@@ -1,16 +1,16 @@
 :root {
-  --bg-dark: #1b1330;
-  --bg-darker: #120c22;
-  --gold: #f4d35e;
-  --gold-dim: #c9a94a;
-  --panel: #2a1f45;
-  --panel-light: #3a2c5e;
-  --text: #f0e9ff;
-  --text-dim: #b8aed6;
-  --danger: #e05263;
-  --success: #6bcf7f;
-  --zone-color: #6a4fb3;
-  color-scheme: dark;
+  --bg-dark: #dcebfa;
+  --bg-darker: #c6def4;
+  --gold: #e3a94c;
+  --gold-dim: #cf9a52;
+  --panel: #ffffff;
+  --panel-light: #eef5fc;
+  --text: #33455c;
+  --text-dim: #7288a1;
+  --danger: #e2828f;
+  --success: #7fcf9a;
+  --zone-color: #8b93d9;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +18,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at 50% -10%, #2d1f56 0%, var(--bg-dark) 45%, var(--bg-darker) 100%);
+  background: radial-gradient(circle at 50% -10%, #f0f8fe 0%, var(--bg-dark) 45%, var(--bg-darker) 100%);
   color: var(--text);
   font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
 }
@@ -40,10 +40,10 @@ body {
 
 .card {
   background: linear-gradient(160deg, var(--panel), var(--panel-light));
-  border: 1px solid rgba(244, 211, 94, 0.25);
+  border: 1px solid rgba(227, 169, 76, 0.25);
   border-radius: 18px;
   padding: 28px 22px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 12px 30px rgba(70,100,140,0.15);
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ body {
   font-size: clamp(1.5rem, 6vw, 2.2rem);
   color: var(--gold);
   margin: 0 0 8px;
-  text-shadow: 0 2px 8px rgba(244,211,94,0.35);
+  text-shadow: 0 2px 8px rgba(227,169,76,0.35);
 }
 
 .subtitle {
@@ -62,7 +62,7 @@ body {
 
 .objective-box {
   background: var(--bg-darker);
-  border: 1px solid rgba(244,211,94,0.2);
+  border: 1px solid rgba(227,169,76,0.2);
   border-radius: 14px;
   padding: 16px 18px;
   margin-bottom: 20px;
@@ -102,7 +102,7 @@ body {
   width: 100%;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid rgba(244,211,94,0.35);
+  border: 1px solid rgba(227,169,76,0.35);
   background: var(--bg-darker);
   color: var(--text);
   font-size: 1rem;
@@ -127,7 +127,7 @@ body {
 .btn-primary {
   background: linear-gradient(160deg, var(--gold), var(--gold-dim));
   color: #2a1f10;
-  box-shadow: 0 6px 16px rgba(244,211,94,0.25);
+  box-shadow: 0 6px 16px rgba(227,169,76,0.25);
 }
 
 .btn-secondary {
@@ -159,7 +159,7 @@ body {
 }
 .hud-item {
   background: var(--panel);
-  border: 1px solid rgba(244,211,94,0.2);
+  border: 1px solid rgba(227,169,76,0.2);
   padding: 8px 14px;
   border-radius: 999px;
   font-weight: 600;
@@ -167,7 +167,7 @@ body {
 }
 .btn-icon {
   background: var(--panel);
-  border: 1px solid rgba(244,211,94,0.2);
+  border: 1px solid rgba(227,169,76,0.2);
   color: var(--text);
   border-radius: 999px;
   width: 40px;
@@ -226,7 +226,7 @@ body {
   cursor: pointer;
   text-align: left;
   color: var(--text);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 18px rgba(70,100,140,0.18);
   transition: transform 0.12s ease;
 }
 .map-node:hover { transform: translateY(-2px); }
@@ -261,11 +261,11 @@ body {
   background: var(--bg-darker);
   border-radius: 999px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(70,100,140,0.15);
 }
 .hp-bar-inner {
   height: 100%;
-  background: linear-gradient(90deg, #ff6161, #ffb347);
+  background: linear-gradient(90deg, #f19999, #f7cf8f);
   width: 100%;
   transition: width 0.4s ease;
 }
@@ -274,7 +274,7 @@ body {
 
 .question-card {
   background: linear-gradient(160deg, var(--panel), var(--panel-light));
-  border: 1px solid rgba(244,211,94,0.25);
+  border: 1px solid rgba(227,169,76,0.25);
   border-radius: 18px;
   padding: 22px;
   text-align: center;
@@ -306,7 +306,7 @@ body {
   min-width: 120px;
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid rgba(244,211,94,0.35);
+  border: 1px solid rgba(227,169,76,0.35);
   background: var(--bg-darker);
   color: var(--text);
   font-size: 1.1rem;
@@ -323,7 +323,7 @@ body {
 .choice-btn {
   padding: 14px 10px;
   border-radius: 12px;
-  border: 1px solid rgba(244,211,94,0.3);
+  border: 1px solid rgba(227,169,76,0.3);
   background: var(--bg-darker);
   color: var(--text);
   font-size: 1.05rem;
