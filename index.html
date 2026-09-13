@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Numeria Quest — A Maths Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- START SCREEN -->
+  <section id="screen-start" class="screen active">
+    <div class="card start-card">
+      <h1 class="title">✨ Numeria Quest ✨</h1>
+      <p class="subtitle">An adventure across the lands of Numeria, where every monster falls to the power of maths.</p>
+      <div class="objective-box">
+        <h2 class="objective-heading">Your Quest</h2>
+        <p>Travel through six regions of Numeria, each guarded by a monster that only maths can defeat. In every battle, answer the questions correctly to strike your foe — get one wrong and it strikes back!</p>
+        <ul class="objective-list">
+          <li>💥 Correct answers damage the monster and earn gems.</li>
+          <li>❤️ Wrong answers cost you a heart — lose them all and you're defeated.</li>
+          <li>🔥 Chain correct answers for streak bonuses.</li>
+          <li>🗺️ Defeat a region's guardian to unlock the next on the map.</li>
+          <li>🐉 Clear all five regions to reach Dragon's Spire and face the final boss.</li>
+        </ul>
+      </div>
+      <label class="name-label" for="hero-name-input">What is your name, adventurer?</label>
+      <input id="hero-name-input" type="text" maxlength="16" placeholder="Enter your name" autocomplete="off">
+      <button id="btn-begin" class="btn btn-primary">Begin Adventure</button>
+      <button id="btn-continue" class="btn btn-secondary" hidden>Continue Saved Journey</button>
+      <button id="btn-reset" class="btn btn-danger" hidden>Reset Progress</button>
+      <p class="hint">🔊 Sound effects included — use the toggle in-game to mute.</p>
+    </div>
+  </section>
+
+  <!-- MAP SCREEN -->
+  <section id="screen-map" class="screen">
+    <header class="hud">
+      <div class="hud-item">🧙 <span id="hud-name">Hero</span></div>
+      <div class="hud-item">💎 <span id="hud-gems">0</span></div>
+      <button id="btn-mute" class="btn-icon" title="Toggle sound">🔊</button>
+    </header>
+    <h2 class="map-heading">Map of Numeria</h2>
+    <p class="map-hint">Choose a quest to begin. Defeat each guardian to unlock the next region.</p>
+    <div id="map-path" class="map-path"></div>
+  </section>
+
+  <!-- BATTLE SCREEN -->
+  <section id="screen-battle" class="screen">
+    <header class="hud">
+      <button id="btn-quit-battle" class="btn-icon" title="Retreat to map">🏳️</button>
+      <div class="hud-item" id="battle-zone-name">Zone</div>
+      <div class="hud-item" id="battle-streak">🔥 0</div>
+    </header>
+
+    <div class="battle-arena" id="battle-arena">
+      <div class="combatant monster-side">
+        <div class="emoji-big" id="monster-emoji">👹</div>
+        <div class="name-tag" id="monster-name">Monster</div>
+        <div class="hp-bar-outer"><div class="hp-bar-inner monster-hp" id="monster-hp-bar"></div></div>
+      </div>
+      <div class="vs-label">VS</div>
+      <div class="combatant hero-side">
+        <div class="emoji-big" id="hero-emoji">🧙</div>
+        <div class="name-tag" id="hero-name-tag">Hero</div>
+        <div class="hearts" id="hero-hearts"></div>
+      </div>
+    </div>
+
+    <div class="question-card" id="question-card">
+      <div class="question-tier" id="question-tier">Tier 1</div>
+      <div class="question-prompt" id="question-prompt">2 + 2 = ?</div>
+      <div class="answer-area" id="answer-area">
+        <input id="answer-input" type="text" inputmode="numeric" autocomplete="off" placeholder="Your answer">
+        <button id="btn-submit-answer" class="btn btn-primary">Attack!</button>
+      </div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </section>
+
+  <!-- RESULT SCREEN -->
+  <section id="screen-result" class="screen">
+    <div class="card result-card">
+      <h2 id="result-title">Victory!</h2>
+      <p id="result-message"></p>
+      <div id="result-stars" class="stars"></div>
+      <p id="result-gems"></p>
+      <button id="btn-result-retry" class="btn btn-secondary">Retry Quest</button>
+      <button id="btn-result-map" class="btn btn-primary">Return to Map</button>
+    </div>
+  </section>
+
+  <!-- ENDING SCREEN -->
+  <section id="screen-end" class="screen">
+    <div class="card end-card">
+      <h1 class="title">🏆 You are the Math Master of Numeria! 🏆</h1>
+      <p id="end-summary"></p>
+      <button id="btn-play-again" class="btn btn-primary">Play Again</button>
+    </div>
+  </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
